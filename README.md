@@ -19,6 +19,8 @@ https://github.com/hellloveyy/halo-writing-skill/tree/main/halo-writing
 
 安装完成后，技能将在后续聊天中可用；若选择器中没有显示，重新打开聊天或重启 Codex。需要固定版本时，将链接中的 `main` 换成 `v0.1.0`。
 
+如果安装器遇到本机 Python 的证书链错误，可让 Codex 使用安装器的 Git 模式（`--method git`），或使用下面的方法二。
+
 ### 方法二：Git 安装
 
 下面是 macOS/Linux 的用户级安装方式，在新电脑终端执行：
