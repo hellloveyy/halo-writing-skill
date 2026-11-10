@@ -4,17 +4,17 @@
 
 源码仓库为 [hellloveyy/halo-writing-skill](https://github.com/hellloveyy/halo-writing-skill)，技能在其中的 `halo-writing/` 子目录。它可以独立于博客项目安装，不依赖原电脑路径或作者站点。
 
-新电脑上优先让 Codex 使用内置 `skill-installer` 安装链接 `https://github.com/hellloveyy/halo-writing-skill/tree/main/halo-writing`。固定初始发布版本时使用 `tree/v0.1.0/halo-writing`。安装器通常安装到 `$CODEX_HOME/skills/halo-writing`，默认 `~/.codex/skills/halo-writing`；以实际返回路径为准。
+新电脑上优先让 Codex 使用内置 `skill-installer` 安装链接 `https://github.com/hellloveyy/halo-writing-skill/tree/main/halo-writing`。固定支持文章和瞬间的当前版本时使用 `tree/v0.2.0/halo-writing`。安装器通常安装到 `$CODEX_HOME/skills/halo-writing`，默认 `~/.codex/skills/halo-writing`；以实际返回路径为准。
 
 也可参照仓库 README，用 Git 克隆后将 `halo-writing/` 链接到 `~/.agents/skills/halo-writing`；或放进某个项目的 `.agents/skills/` 使其仅对该项目可用。Codex 支持技能目录符号链接，但移动源目录会使链接失效。避免在同一机器安装多个同名副本。
 
-安装后可使用自然语言「用 halo写文……」或 `$halo-writing`。若新技能未出现在选择器中，重新打开聊天或重启客户端。安装完成仅表示技能文件就绪，不表示 MCP 认证已配置或文章已同步。
+安装后可用「halo写文」选择文章、「halo写瞬间」选择瞬间，或用 `$halo-writing` 默认进入文章模式。无需安装第二个技能。若新技能未出现在选择器中，重新打开聊天或重启客户端。安装完成仅表示技能文件就绪，不表示 MCP 认证或瞬间工具已配置，也不表示内容已同步。
 
-## 文章另行同步
+## 内容另行同步
 
 技能、文章、配图、续写记录和发布状态是不同的文件。只重新安装技能不能恢复上次文章或聊天；使用用户选择的私有 Git 仓库或文件同步方式保存后四类文件。不要把正在写的文章提交到这个公开技能仓库。
 
-续写前定位当前写作工作区，读取原稿、图片和交接记录。只存在远程草稿时，可在已获读取授权的情况下通过 Halo MCP 恢复；未上传内容仍需从用户的文件来源取得。
+续写前定位当前写作工作区，读取原稿、图片、交接记录中的 `content_type` 和对应类型的远端 ID。确认发布时沿用已恢复的类型，不能因换电脑改投另一类型。只存在已授权的远程草稿或已发布对象时，可通过对应的 Halo MCP 读取；未上传内容仍需从用户的文件来源取得。
 
 ## 凭据单独配置
 

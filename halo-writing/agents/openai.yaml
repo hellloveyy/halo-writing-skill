@@ -1,4 +1,4 @@
 interface:
-  display_name: "halo写文"
-  short_description: "从灵感聊天到 Markdown 成稿与配图，审阅确认后发布到 Halo，并支持跨电脑续写"
-  default_prompt: "使用 $halo-writing，和我聊聊这个灵感，整理成文章并配图，等我确认后再发布到 Halo。"
+  display_name: "halo写文 · 写瞬间"
+  short_description: "用 halo写文 或 halo写瞬间 开始，聊天成稿并配图，确认后按入口发布文章或瞬间"
+  default_prompt: "使用 $halo-writing（halo写文），和我聊聊这个灵感，整理成文章并配图，等我确认后再发布。"
